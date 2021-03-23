@@ -1,0 +1,3 @@
+include ':OnBlock-eKYC'
+include ':app'
+rootProject.name = "E-kyc_sdk"
