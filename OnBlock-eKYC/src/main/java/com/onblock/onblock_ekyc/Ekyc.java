@@ -4,7 +4,8 @@ import android.util.Log;
 
 public class Ekyc {
     public static String TAG = "Ekyc.jva";
-    public static void Log(){
-        Log.d(TAG, "message from eKYC library");
+    public static String Log(String msg){
+        return msg;
     }
+
 }
