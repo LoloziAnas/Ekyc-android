@@ -1,6 +1,5 @@
 package com.OnBlock.ekycsdk;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
@@ -87,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
             String resultText = firebaseVisionText.getText();
             textView.setText(resultText);
 
-
         })
         .addOnFailureListener(e -> Log.d(TAG,e.getMessage()));
     }
@@ -99,6 +97,5 @@ public class MainActivity extends AppCompatActivity {
         Bitmap bitmap = (Bitmap) bundle.get("data");
         imageView.setImageBitmap(bitmap);
         runRecognizer(bitmap);
-
     }
 }
